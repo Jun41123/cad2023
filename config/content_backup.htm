@@ -31,7 +31,19 @@
 <p><img alt="" height="209" src="/images/螢幕擷取畫面 2024-01-14 210109.png" width="319"/></p>
 <p>5.球</p>
 <p><img alt="" height="178" src="/images/螢幕擷取畫面 2024-01-14 205905.png" width="293"/></p>
+<h2>任務二(考試)</h2>
+<p><span>操作考試</span>: 請利用自選的電腦輔助設計套件建立<span> </span><a href="https://mde.tw/cadnote/content/pms.html">https://mde.tw/cadnote/content/pms.html</a>  中的零組件 (尺寸與操控內容請自訂), 並加入感測器與適當的設計元件或機構, 說明預計如何令其在接上外部電源後, 能夠讓系統中的鋼球在軌道上進行永動模擬.</p>
+<p>完成零組件與可行系統設計後, 請將零組件轉入 CoppeliaSim 建立模擬場景, 並在分組中自選另一名組員, 經過彼此討論後, 請利用 ZMQ remote API Python 程式互相控制對方的永動模擬場景, 以便完成兩人一組的兩則永動機模擬操作.</p>
+<p>step1: 基本零組件設計繪圖.</p>
+<p>step2: 施力機構設計, 納入軌道下方控制盒中.</p>
+<p>step3: 將軌道、鋼球與簡化後的控制盒輸入 CoppeliaSim.</p>
+<p>step4: 配合控制系統設計, 納入感測器與施力機構或系統.</p>
+<p>step5: 在 localhost 以 IPv6 ZMQ remote API Python 程式, 配合感測器作動對鋼球施力.</p>
+<p>step6: 跨網路對協同組員的場景進行控制模擬.</p>
 <p><span></span></p>
+<p><span>*利用Inventor繪製(請在校網或使用 VPN 下載 2022 版本,安裝檔案 Inventor_Pro_2022_Traditional_Chinese_Win_64bit_Dlm_001_003.sfx.exe 2GB)</span></p>
+<p>*有成功匯到<span>Coppeliasim ,但動不太起來(應該是有某個有出錯)</span></p>
+<p><span><img alt="" height="220" src="/images/螢幕擷取畫面 2024-01-05 144859.png" width="392"/></span></p>
 <p></p><h2>網路設定</h2>
 <p><span>*由於電腦輔助設計室某部分套件, 在 IPv4 網路環境下會被防毒軟體偵測到封包異常而封閉網路, 因此以下將 IPv4 網路關閉, 僅使用 IPv6, 並透過雙網路協定支援的代理主機設定, 以便與僅支援 IPv4 的網路主機連線.</span></p>
 <p><span>*利用隨身碟上的批次檔案進行電腦輔助設計室網路環境設定</span></p>
@@ -117,7 +129,8 @@
 <p><span>L: 是否針對專案二的 1D 平台鋼球平衡系統所需的<span> </span><span>PID 控制理論</span>進行資料收集與 ChatGPT 對答 :<span style="color: #ff0000;">否</span></span></p>
 <p><span>課程心得: 目前做的這些覺得好難,有看一部份的影片,但做的成果有點失敗,但相信期末前可以做出來的,在這期間可以學到很多有趣的程式.</span></p>
 <p><span></span></p>
-<p><span></span></p><h2>影片</h2>
+<p><span></span></p>
+<h2>影片</h2>
 <p><span>各學員必須在網站呈現完整看過以下各階段的教學影片的歷程, 並了解其內容要旨</span></p>
 <p><span>並針對各階段<span>內容實際操作至少一遍</span></span></p>
 <p><span>教學影片 (登入 nfu Teams 才可以觀看):</span></p>
@@ -143,10 +156,11 @@
 <p><span>是20.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EdTvQFLz9ORIvOpqIp2j9ksBjwStW4JCsJL2k4zOtMyn-w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=gypbLf">簡化後的專案一鋼球永動模擬操作</a><span> </span>(12:37)</span></p>
 <p><span>是21.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EeZRAni37_9MkbFXp-ljG18B8sw0a0VbaGuLgqwWT_z8Gg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=hwuUw1">之二</a><span> </span>(9:33)</span></p>
 <p><span>是22.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EY6ZM8Ic90hCp7sbYupfBxgBpGfM0A39W9O1lRH41SE4nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=C8qNQE">之三</a><span> </span>(21:09)</span></p>
-<p><span>23.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZ_4sXrhtuhMtDhuEahtg7YBRltpz4CeXHpDS-SCCgNvMw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=h5KRXc">之四</a><span> </span>(4:34)</span></p>
-<p><span>24.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcRiRKiMlfZJj5yKxGHvrLEBvY5Sd3XscHo2GMW6joC8Wg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=5H9FWR">專案二</a><span> </span>(16:46)</span></p>
-<p><span>ok 25.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcpVbx06cPVMreEhd2VeMhoBjVgJz-9yyzCxH9x2b2O9rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=LIkLqM">之二</a><span> </span>(15:41)</span></p>
-<p><span>ok 26.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EVgbmKwN6PZCpqaVyKp-NxoBACBnovNtk3HIKhLmfbJmuA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=Oxh1Cr">之三</a><span> </span>(14:15)</span></p><h1>Brython</h1>
+<p><span>是23.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZ_4sXrhtuhMtDhuEahtg7YBRltpz4CeXHpDS-SCCgNvMw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=h5KRXc">之四</a><span> </span>(4:34)</span></p>
+<p><span>是24.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcRiRKiMlfZJj5yKxGHvrLEBvY5Sd3XscHo2GMW6joC8Wg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=5H9FWR">專案二</a><span> </span>(16:46)</span></p>
+<p><span>是 25.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcpVbx06cPVMreEhd2VeMhoBjVgJz-9yyzCxH9x2b2O9rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=LIkLqM">之二</a><span> </span>(15:41)</span></p>
+<p><span>是是 26.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EVgbmKwN6PZCpqaVyKp-NxoBACBnovNtk3HIKhLmfbJmuA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=Oxh1Cr">之三</a><span> </span>(14:15)</span></p>
+<h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
