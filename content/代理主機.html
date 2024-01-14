@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='links.html'>links</a><li class='has-children'><a href='上課進度.html'>上課進度</a><ul class='dropdown'><li><a href='W14.html'>W14</a><li><a href='網路設定.html'>網路設定</a><li><a href='w4 - w5.html'>w4 - w5</a><li><a href='w6 - w7.html'>w6 - w7</a><li><a href='w8.html'>w8</a><li><a href='w12.html'>w12</a></li></ul><li class='has-children'><a href='課程總結.html'>課程總結</a><ul class='dropdown'><li><a href='41123141廖俊生.html'>41123141廖俊生</a></li></ul><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='上課進度.html'>上課進度</a><ul class='dropdown'><li><a href='W14.html'>W14</a><li><a href='網路設定.html'>網路設定</a><li><a href='代理主機.html'>代理主機</a><li><a href='w4 - w5.html'>w4 - w5</a><li><a href='w8.html'>w8</a></li></ul><li class='has-children'><a href='課程總結.html'>課程總結</a><ul class='dropdown'><li><a href='影片.html'>影片</a></li></ul><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,13 +142,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w4 - w5 << <a href='w4 - w5.html'>Previous</a> <a href='w8.html'>Next</a> >> w8<br /><h1>w6 - w7</h1>
-<p>*  <span>2a 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cada::班級名單序號(42).</span></p>
-<p><span>*  前次上課有把網路設定下載下來存到隨身碟,進行本課程教室的網路設定.</span></p>
-<p><span>*  進行分組作業(9人一組):</span></p>
-<p>    1 . 小組網站 :<span> </span><a href="https://41023134.github.io/cad2023_ag5/content/index.html">https://41023134.github.io/cad2023_ag5/content/index.html</a></p>
-<p>    2 . 小組倉儲 :<span> </span><a href="https://github.com/41023134/cad2023_ag5">https://github.com/41023134/cad2023_ag5</a></p>
-<br />w4 - w5 << <a href='w4 - w5.html'>Previous</a> <a href='w8.html'>Next</a> >> w8</div>
+    <div id="tipue_search_content">網路設定 << <a href='網路設定.html'>Previous</a> <a href='w4 - w5.html'>Next</a> >> w4 - w5<br /><h1>代理主機</h1>
+<p>目前只有<span style="color: #ff0000;">Replit、s.cycu.org<span style="color: #000000;">事建成功的 , 但<span> localhost</span><span> 目前還沒建起來</span></span>  </span></p>
+<p>Replit:</p>
+<p><span>如何維護網頁?</span></p>
+<p><span>當在動態網站save剛更新的資料內容後&gt;點擊convert轉換網站&gt;回到replit點擊Git&gt;在update輸入框中輸入更新內容的代名稱&gt;點選stage&amp;commit(會看到更新的內容已被載入)&gt;最後點擊push&gt;到github個人倉儲看是否有亮綠燈</span></p>
+<p><span>有(以上傳完成) ;  </span><span>沒有(亮黃燈或亮紅燈代表還在上傳中)</span></p>
+<p></p>
+<p><span>s.cycu.org:</span></p>
+<p>1.首先要開啟cmd(小黑窗)中執行ssh cad(學號)@s1511.cycu.org</p>
+<p>  *若要用可攜中start.bat中的cmd要先將start.bat用編譯器打開並將第三行蓋掉,然後重新啟動。</p>
+<p>2.執行完會要你打密碼,密碼在學校Mail2000,10/28的一封s1511.cycu.org 帳號通知信裡。</p>
+<p>3.連線完會進到OpenSSH SSH client的黑窗,再來是要生成ssh的key,在黑框中執行ssh-keygen。</p>
+<p>4.接下來就是要用FileZilla連線s1511.cycu.org將.ssh目錄下的id_rsa.pub拉到本地的目錄中,</p>
+<p>   再用編譯器打開,並將內容送入到Github-&gt;Settings-&gt;SSH and GPG keys。</p>
+<p>5.然後下載config並用FileZilla送進.ssh目錄下</p>
+<p>6.然後在OpenSSH SSH client中執行以下三個指令:</p>
+<p>   1.git config --global user.name "Github帳號名"</p>
+<p>   2.git config --global user.email "Github信箱"</p>
+<p>   3.git config --global http.proxy http://p4.cycu.org:3128</p>
+<p>7.將遠端Github的倉儲克隆下來,有以下兩種方法:</p>
+<p>   1.http協定:git clone --recurse-submodules https://github.com/41123141/cad2023.git</p>
+<p>   2.ssh協定:git clone --recurse-submodules git@github.com:41123141/cad2023.git</p>
+<p>  *由於克隆的方式不一樣倉儲中.git中的config設定也不同,因為最後是要用ssh推送到Github,</p>
+<p>   用https克隆的要將config設定改成ssh的樣子,也就是將<span>https://github.com/41123141/cad2023.git</span></p>
+<p>   改成git@github.com:41123141/cad2023.git</p>
+<p>8.再來要下載server.py的檔案用編輯器將自己9開頭的埠號輸入並將檔案用FileZilla送到倉儲目錄下</p>
+<p>9.然後在小黑窗執行cd site-xxxxxxxx移動到倉儲目錄下執行python3 server.py(沒出現東西就算成功)</p>
+<p>10.在firefox或waterfox中執行https:s1511.cycu.org:8xxx</p>
+<p>  *若有設定proxy要關掉</p>
+<p></p>
+<p></p>
+<p></p><br />網路設定 << <a href='網路設定.html'>Previous</a> <a href='w4 - w5.html'>Next</a> >> w4 - w5</div>
         
     <!-- footer -->
       <div class="container">

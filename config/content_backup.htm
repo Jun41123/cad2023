@@ -1,17 +1,26 @@
 <h1>About</h1>
 <p><a href="https://github.com/mdecycu/cmsite"> https://github.com/mdecycu/cmsite </a></p>
-<p>倉儲 :<a href="https://github.com/Jun41123/cad2023">Jun41123/cad2023 (github.com)</a></p>
-<p>網站 :<a href="https://jun41123.github.io/cad2023/content/About.html">cmsite (jun41123.github.io)</a></p>
-<p></p>
-<h1>links</h1>
-<p><span>電腦輔助設計與實習課程分組網站在 s.cycu.org 所分配的外部與內部埠號: cad2023_ag5: 8236, 9236</span></p>
-<p>學員固定 IPv6 位址: 2001:288:6004:17:2023:cada::42</p>
+<p>*倉儲 :<a href="https://github.com/Jun41123/cad2023">Jun41123/cad2023 (github.com)</a></p>
+<p>*網站 :<a href="https://jun41123.github.io/cad2023/content/About.html">cmsite (jun41123.github.io)</a></p>
+<p><span>*  進行分組作業(9人一組):</span></p>
+<p>    1 . 小組網站 :<span> </span><a href="https://41023134.github.io/cad2023_ag5/content/index.html">https://41023134.github.io/cad2023_ag5/content/index.html</a></p>
+<p>    2 . 小組倉儲 :<span> </span><a href="https://github.com/41023134/cad2023_ag5">https://github.com/41023134/cad2023_ag5</a></p>
 <p></p>
 <h1>上課進度</h1>
 <h2>W14</h2>
+<p>使鋼球在三角形斜面上來回進行永動模三角永動機動機)</p>
+<p><span>1.</span></p>
+<p><span><img alt="" height="145" src="/images/螢幕擷取畫面 2024-01-12 131927.png" width="276"/></span></p>
+<p>2.</p>
+<p><span><img alt="" height="146" src="/images/螢幕擷取畫面 2024-01-12 131952.png" width="276"/></span></p>
+<p>3.</p>
+<p><span><img alt="" height="144" src="/images/螢幕擷取畫面 2024-01-12 132007.png" width="275"/></span></p>
+<p>4.</p>
+<p><span><img alt="" height="144" src="/images/螢幕擷取畫面 2024-01-12 132038.png" width="277"/></span></p>
 <p><br/><br/><br/><br/></p>
 <p><span></span></p>
-<p></p><h2>網路設定</h2>
+<p></p>
+<h2>網路設定</h2>
 <p><span>*由於電腦輔助設計室某部分套件, 在 IPv4 網路環境下會被防毒軟體偵測到封包異常而封閉網路, 因此以下將 IPv4 網路關閉, 僅使用 IPv6, 並透過雙網路協定支援的代理主機設定, 以便與僅支援 IPv4 的網路主機連線.</span></p>
 <p><span>*利用隨身碟上的批次檔案進行電腦輔助設計室網路環境設定</span></p>
 <p><span>*下載(下載包含 Python 3.12.0, Tiny C Compiler 與 CoppeliaSim 4.5.1 的 <a href="https://nfuedu-my.sharepoint.com/:u:/g/personal/yen_nfu_edu_tw/EVv87jPTxf5Aqj68CR7IgoEBMkz_9-Xq6_DckCLKJeCgqA?e=wNGNOx">portable_2024_cp_wcms_cad_cd_w_ebooks.7z</a><span>, 1.2GB 解開後 3.3GB, 需要下載密碼), 必須先放入個人所分配到的 IPv6 位址後, 以管理者身分執行批次檔案, 就能直接完成電腦輔助設計室中電腦的網路連線設定.</span></span></p>
@@ -19,11 +28,23 @@
 <p><span>*各學員所分配的固定 IPv6 位址如下:</span></p>
 <p> 2a 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cada::42</p>
 <p><span><span><span>*</span></span></span><span>電腦輔助設計與實習課程分組網站在 s.cycu.org 所分配的外部與內部埠號: cad2023_ag5: 8236, 9236</span></p>
-<p></p>
-<p><span><span><span></span></span></span></p>
-<p><span><span><span></span></span></span></p>
 <p><span></span></p>
-<h2>w4 - w5</h2>
+<h2>代理主機</h2>
+<p>目前只有<span style="color: #ff0000;">Replit、s.cycu.org<span style="color: #000000;">事建成功的 , 但<span> localhost</span><span> 目前還沒建起來</span></span>  </span></p>
+<p>Replit:</p>
+<p>1.先按<span style="color: #ff0000;">Create repl</span>創建一個,然後按<span style="color: #ff0000;">Import from Github</span>導入cad2023開頭的倉儲</p>
+<p>2.導入倉儲,首先第一件要做的事是在Shell下執行<span style="color: #ff0000;">git submodule update --init --recursive</span>,</p>
+<p>目的在於取下cmsite倉儲中子模組的檔案。</p>
+<p>3.然後在Shell下執行<span style="color: #ff0000;">pip install flask flask_cors bs4 lxml pelican markdown gevent</span>,</p>
+<p>來安裝<span style="color: #ff0000;">cmsimde</span>需要的模組。</p>
+<p>4.切換到主函式<span style="color: #ff0000;">main.py並按Run執行</span>。</p>
+<p>5.若要推送到遠端Github,要用<span style="color: #ff0000;">Commit Message</span>,打上標題然後按<span style="color: #ff0000;">Commit All &amp;Push</span>。</p>
+<p></p>
+<p><span>s.cycu.org:</span></p>
+<p><span></span></p>
+<p></p>
+<p></p>
+<p></p><h2>w4 - w5</h2>
 <p>*   建立考試帳號:需在系上IPV6的網路 , 就可以建立一個考試帳號(<a href="https://exam.cycu.org/public/code/index.php">https://exam.cycu.org</a>) , 然後進行考試.</p>
 <p>*   建立網站: (1). 先建立一個自己的個人倉儲(github.com) .</p>
 <p>                   (2). 再利用倉儲去建立一個靜態網頁(主頁面上有一個設定,點進去找到一個Pages,進去就可以建靜態了.)</p>
@@ -33,12 +54,6 @@
 <p><span>*   學會使用CoppeliaSim</span></p>
 <p><span>*   記得準備隨身碟,免得造成自己的麻煩.</span></p>
 <p></p>
-<h2>w6 - w7</h2>
-<p>*  <span>2a 學員展示用 IPv6 位址: 2001:288:6004:17:2023:cada::班級名單序號(42).</span></p>
-<p><span>*  前次上課有把網路設定下載下來存到隨身碟,進行本課程教室的網路設定.</span></p>
-<p><span>*  進行分組作業(9人一組):</span></p>
-<p>    1 . 小組網站 :<span> </span><a href="https://41023134.github.io/cad2023_ag5/content/index.html">https://41023134.github.io/cad2023_ag5/content/index.html</a></p>
-<p>    2 . 小組倉儲 :<span> </span><a href="https://github.com/41023134/cad2023_ag5">https://github.com/41023134/cad2023_ag5</a></p>
 <h2>w8</h2>
 <p>我悶要把動態的文件推到靜態,需要用可攜或是Replit才可以推上去,但因為<span>Replit是個付費軟體有些人漸漸地不能用,所以而外建立一個代理主機<span style="color: #ff0000;"> s1511(透過 SSH 與分配埠號) <span style="color: #000000;">,以下是<span style="color: #ff0000;">s1511<span style="color: #000000;"> 建立方式:</span></span></span></span></span></p>
 <p><span><span style="color: #ff0000;"><span style="color: #000000;"><span style="color: #ff0000;"><span style="color: #000000;">1 . 如何用遠端登入登出:遠端登入到 s1511.cycu.org (只支援 IPv6 網路協定),先在空白頁面建立ssh與sftp均在後面加上 cad學號@s1511.cycu.org, 使用ssh指令然後輸入密碼(密碼不會顯示出來),使用 putty.exe 設定 session 令其連接到  s1511.cycu.org,exit(這為登出的指令),假如在 IPv4下, 則 ssh 指令與 putty.exe 都必須透過能支援 IPv6 的代理主機進行連線.</span></span></span></span></span></p>
@@ -54,9 +69,6 @@
 <p>7 . <span>網路連線協定: 將 cad2023 倉儲資料取到 s1511.cycu.org 帳號下, 若使用 SSH 協定且位於只有 IPv6 網路協定, 則分別牽涉以 SSH 及 https 協定連線到 github.com 的設定(運用在 git clone --recurse-submodules git@github.com:帳號/cad2023.git).</span></p>
 <p><span><span style="color: #000000;"><span color="#ff0000" style="color: #ff0000;"><span style="color: #000000;"> </span></span></span></span></p>
 <p><span><span><span></span></span></span></p>
-<h2>w12</h2>
-<p>因為這周網路出點問題,所以建立一個代理主機<span>ocalhost(透過 token, SSH 確定 git push 權限, SSH 設定可透過 Putty 完成)(ssh-keygen 在 .ssh 建立 id_rsa 與 id_rsa.pub, 以 sftp 放入 config, 並利用 puttygent 將 id_rsa 轉為 .ppk 以便設立 session 用)</span></p>
-<p><span>使用 ChatGPT 協助處理</span><span>上述問題一</span></p>
 <p><span></span></p>
 <p></p>
 <p></p>
@@ -74,23 +86,25 @@
 <p><span>J: 是否使用所分配的 CAD 套件完成<span>專案二 1D 平台零組件繪圖</span>, 並提供零組件下載 :是(還沒推)</span></p>
 <p><span>K: 是否利用<span> </span><span>ZMQ Remote API Python</span><span> </span>對專案二轉入的零組件設定感測器, 並進行鋼球永動模擬 :否</span></p>
 <p><span>L: 是否針對專案二的 1D 平台鋼球平衡系統所需的<span> </span><span>PID 控制理論</span>進行資料收集與 ChatGPT 對答 </span></p>
+<p><span>課程心得: 目前做的這些覺得好難,有看一部份的影片,但做的成果有點失敗,但相信期末前可以做出來的,在這期間可以學到很多有趣的程式.</span></p>
 <p><span></span></p>
-<p></p>
-<p><span>各學員必須在網站呈現<span>完整看過以下各階段的教學影片的歷程, 並了解其內容要旨</span></span></p>
+<p><span></span></p>
+<h2>影片</h2>
+<p><span>各學員必須在網站呈現完整看過以下各階段的教學影片的歷程, 並了解其內容要旨</span></p>
 <p><span>並針對各階段<span>內容實際操作至少一遍</span></span></p>
 <p><span>教學影片 (登入 nfu Teams 才可以觀看):</span></p>
-<p><span>ok 1.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ed9GeWN75kJDmWsdXEeEDukBWc7PMQtSukeGS-uwGrC83Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=2p9IYc">利用批次檔、登錄檔與 powershell 執行網路設定</a><span> </span>(7:15)</span></p>
-<p><span>ok 2.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/ETWPxa6xUsJIvj8Ln0hiFVEBj7mRdJN6K79PxE4PtG4MnQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=zBzSrM">Onshape 零組件轉入 CoppeliaSim</a><span> </span>(19:58)</span></p>
-<p><span>ok 3.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ea2ChMuoUg9Bs2eT0jyXbGsBL5QhOp6IA1K2DaUJrCYydw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=4cOeXa">從 github 空倉儲建立 cmsimde 網際內容管理倉儲</a><span> </span>(15:22)</span></p>
-<p><span>ok 4.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV3ei-p-sypInCfRB-1K9mYBfrx8NaHo8Jflcu58czYz9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=pBQ60l">之二</a><span> </span>(34:20)</span></p>
-<p><span>5.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EYcLIH7IUSFNtsuAwuLLebIBUlxP4mMEFfuqSKNj8GyaCQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=lVJCpD">利用 Pull Requests 提出修改 studlist 倉儲資料的用法</a><span> </span>(7:58)</span></p>
-<p><span>ok 6.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EeRJ5iW8_YRIpWXFY4v1wtsBmPqocyo0hoIDG-kBxEIDnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=HyFYgH">利用 SSH 協定取下倉儲並啟動編輯網站</a><span> </span>(22:05)</span></p>
-<p><span>ok 7.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfmRiVKZlm1Kl1lvtwy2cOQB3ARPTEUouh5Z90Ze4M-KUA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=2NnU7j">之二</a><span> </span>(10:16)</span></p>
-<p><span>ok 8.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV9_amTTTJlLo4Xu5Hj-iR0BWW073uYsmiU4iOkGfi8akw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=ERgdJt">s.cycu.org 伺服器設定操作</a><span> </span>(18:47)</span></p>
-<p><span>ok 9.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcHihSEDROlEg7PrHMrBcRsB5aI1_guHU9LjEtmT44g9Xw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=T0mIDt">之二</a><span> </span>(9:46)</span></p>
-<p><span>ok 10.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfPRpEEeDG5GiUhiJvVtbbkBRD2sIszBzmQafElVTaagIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=dFvtxe">之三</a><span> </span>(13:58, 無語音說明)</span></p>
-<p><span>ok 11.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EbN6kKaMNqZFhbWxOLxJH8MBv623sjibVYMtzNPMYa2ptA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=ZwFfu8">之四</a><span> </span>(21:30)</span></p>
-<p><span>ok 12.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ed3IQ1_rfENBh9Tsp1R-m38BudjnNPFUcIgIewMrZ9bdgg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=MFna2Z">之五</a><span> </span>(19:02)</span></p>
+<p><span>是 1.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ed9GeWN75kJDmWsdXEeEDukBWc7PMQtSukeGS-uwGrC83Q?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=2p9IYc">利用批次檔、登錄檔與 powershell 執行網路設定</a><span> </span>(7:15)</span></p>
+<p><span>是 2.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/ETWPxa6xUsJIvj8Ln0hiFVEBj7mRdJN6K79PxE4PtG4MnQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=zBzSrM">Onshape 零組件轉入 CoppeliaSim</a><span> </span>(19:58)</span></p>
+<p><span>是 3.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ea2ChMuoUg9Bs2eT0jyXbGsBL5QhOp6IA1K2DaUJrCYydw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=4cOeXa">從 github 空倉儲建立 cmsimde 網際內容管理倉儲</a><span> </span>(15:22)</span></p>
+<p><span>是 4.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV3ei-p-sypInCfRB-1K9mYBfrx8NaHo8Jflcu58czYz9A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=pBQ60l">之二</a><span> </span>(34:20)</span></p>
+<p><span>是5.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EYcLIH7IUSFNtsuAwuLLebIBUlxP4mMEFfuqSKNj8GyaCQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=lVJCpD">利用 Pull Requests 提出修改 studlist 倉儲資料的用法</a><span> </span>(7:58)</span></p>
+<p><span>是 6.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EeRJ5iW8_YRIpWXFY4v1wtsBmPqocyo0hoIDG-kBxEIDnw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=HyFYgH">利用 SSH 協定取下倉儲並啟動編輯網站</a><span> </span>(22:05)</span></p>
+<p><span>是 7.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfmRiVKZlm1Kl1lvtwy2cOQB3ARPTEUouh5Z90Ze4M-KUA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=2NnU7j">之二</a><span> </span>(10:16)</span></p>
+<p><span>是 8.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EV9_amTTTJlLo4Xu5Hj-iR0BWW073uYsmiU4iOkGfi8akw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=ERgdJt">s.cycu.org 伺服器設定操作</a><span> </span>(18:47)</span></p>
+<p><span>是 9.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcHihSEDROlEg7PrHMrBcRsB5aI1_guHU9LjEtmT44g9Xw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=T0mIDt">之二</a><span> </span>(9:46)</span></p>
+<p><span>是 10.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfPRpEEeDG5GiUhiJvVtbbkBRD2sIszBzmQafElVTaagIA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=dFvtxe">之三</a><span> </span>(13:58, 無語音說明)</span></p>
+<p><span>是 11.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EbN6kKaMNqZFhbWxOLxJH8MBv623sjibVYMtzNPMYa2ptA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=ZwFfu8">之四</a><span> </span>(21:30)</span></p>
+<p><span>是 12.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/Ed3IQ1_rfENBh9Tsp1R-m38BudjnNPFUcIgIewMrZ9bdgg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=MFna2Z">之五</a><span> </span>(19:02)</span></p>
 <p><span>13.<span> </span><a href="https://mde.tw/cadnote/content/wink.html">Wink 操作說明</a><span> </span>(2:05)</span></p>
 <p><span>14.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfsKmsmwGvpIsOPXBLR7oQ8BazxDCva3YPbjvCjbscMqmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=lCHW83">課程內容摘要簡報說明</a><span> </span>(26:22)</span></p>
 <p><span>15.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EfsKmsmwGvpIsOPXBLR7oQ8BazxDCva3YPbjvCjbscMqmw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=BegP8f">之二</a><span> </span>(12:22)</span></p>
@@ -102,12 +116,9 @@
 <p><span>21.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EeZRAni37_9MkbFXp-ljG18B8sw0a0VbaGuLgqwWT_z8Gg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=hwuUw1">之二</a><span> </span>(9:33)</span></p>
 <p><span>22.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EY6ZM8Ic90hCp7sbYupfBxgBpGfM0A39W9O1lRH41SE4nw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=C8qNQE">之三</a><span> </span>(21:09)</span></p>
 <p><span>23.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EZ_4sXrhtuhMtDhuEahtg7YBRltpz4CeXHpDS-SCCgNvMw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=h5KRXc">之四</a><span> </span>(4:34)</span></p>
-<p><span>ok 24.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcRiRKiMlfZJj5yKxGHvrLEBvY5Sd3XscHo2GMW6joC8Wg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=5H9FWR">專案二</a><span> </span>(16:46)</span></p>
+<p><span>24.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcRiRKiMlfZJj5yKxGHvrLEBvY5Sd3XscHo2GMW6joC8Wg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=5H9FWR">專案二</a><span> </span>(16:46)</span></p>
 <p><span>ok 25.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EcpVbx06cPVMreEhd2VeMhoBjVgJz-9yyzCxH9x2b2O9rQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=LIkLqM">之二</a><span> </span>(15:41)</span></p>
-<p><span>ok 26.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EVgbmKwN6PZCpqaVyKp-NxoBACBnovNtk3HIKhLmfbJmuA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=Oxh1Cr">之三</a><span> </span>(14:15)</span></p>
-<h2>41123141廖俊生</h2>
-<p><span>目前做的這些覺得好難,有看一部份的影片,但做的成果有點失敗,但相信期末前可以做出來的,在這期間可以學到很多有趣的程式.</span></p>
-<h1>Brython</h1>
+<p><span>ok 26.<span> </span><a href="https://nfuedu-my.sharepoint.com/:v:/g/personal/yen_nfu_edu_tw/EVgbmKwN6PZCpqaVyKp-NxoBACBnovNtk3HIKhLmfbJmuA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&amp;e=Oxh1Cr">之三</a><span> </span>(14:15)</span></p><h1>Brython</h1>
 <p><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">https://en.wikipedia.org/wiki/Python_(programming_language)</a></p>
 <h4>Examples:</h4>
 <p style="padding-left: 30px;"><a href="https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d">https://gist.github.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d</a></p>
